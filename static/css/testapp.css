@@ -1,0 +1,37 @@
+html 
+{ 
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+
+body
+{ 
+    margin:0px;
+    padding: 0px;
+    background: url("/images/background_texture.jpg") repeat ;
+}
+
+.wrapper 
+{
+    min-width:100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    color: #444;
+    margin: auto;
+}
+
+#imagecontainer{
+    grid-column: 2 /3;
+    grid-row: 2/3;
+    margin:auto;
+}
+
+#imagecontainer img{
+
+}

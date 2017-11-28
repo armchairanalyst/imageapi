@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bhargavi Books & Stationery : Image Collage</title>
+
+        <link href="https://fonts.googleapis.com/css?family=
+        Exo|Pacifico|Aladin" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/collageapp.css">
+    </head>
+
+    <body>
+
+        <div id="frame">
+            <div id="toptitle">
+                <div id="topgridcontainer">
+
+                    <div class="gridflexitem" id="tbgbar"></div>
+
+                    <div class="gridflexitem" id="bbgbar"></div>
+
+
+                    <div class="gridflexitem" id="logo">
+                        <h1 id="logoheader">Bhargavi</h1>
+                    </div>
+
+                    <div class="gridflexitem" id="title">
+                        <h2 id="titleheader" class="inset-text-effect">Chitrapatham</h2>
+                    </div>
+
+                    <div class="gridflexitem" id="searchinput">
+                        <div class="input-group">
+                            <input id="searchtext" type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-dark" type="button" onclick="performSearch()">Search..</button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="gridflexitem" id="searchstatus">
+                        <p style="color:#fff;font-size:1em;" id="loadingStatus">0 Results</p>
+                    </div>
+                </div>
+            </div>
+            <div id="midsection">
+                <div id="midsectiongrid"> 
+                    <div id="canvasgrid">
+                        <h1>Loading Results...</h1>
+                    </div>  
+                    <div id="resultstitle">
+                        <h3 style="font-family:'pacifico';font-size:2em;color:darkcyan">Search Results</h3>
+                    </div>
+                    <div id="selectiontitle">
+                        <h3 style="font-family:'pacifico';font-size:2em;color:darkcyan">Selected Images</h3>
+                    </div>
+                    <div id="resultsgrid">
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic1" class="" uid="" onclick="selectImage('pic1','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic1','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic2" class="" uid="" onclick="selectImage('pic2','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic2','HD')">HD</button>
+                                </div>
+                        </div>
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic3" class="" uid="" onclick="selectImage('pic3','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic3','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic4" class="" uid="" onclick="selectImage('pic4','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic4','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic5" class="" uid="" onclick="selectImage('pic5','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic5','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic6" class="" uid="" onclick="selectImage('pic6','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic6','HD')">HD</button>
+                                </div>
+                        </div>
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic7" class="" uid="" onclick="selectImage('pic7','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic7','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic8" class="" uid="" onclick="selectImage('pic8','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic8','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic9" class="" uid="" onclick="selectImage('pic9','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic9','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic10" class="" uid="" onclick="selectImage('pic10','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic10','HD')">HD</button>
+                                </div>
+                        </div>
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic11" class="" uid="" onclick="selectImage('pic11','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic11','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        <div class="imggrid">
+                                <img src="" alt="" id="pic12" class="" uid="" onclick="selectImage('pic12','SD')">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" onclick="selectImage('pic12','HD')">HD</button>
+                                </div>
+                        </div>
+
+                        
+
+
+                    </div>
+                    <div id="selectiongrid">
+
+                    </div>
+                    <div class="gridflexitem" id="resultsmenugrid">
+                        <button id="prevpage" onclick="GetPrevResultsPage()" type="button" class="btn btn-info"><<< </button>
+                        <button type="button" class="btn btn-secondary" onclick="refreshBrowser()" >Refresh Browser</button>
+                        <button type="button" class="btn btn-primary" onclick="reloadSearch()" >Reload Search</button>
+                        <button type="button" class="btn btn-primary" onclick="loadBrowserResults()">Load Browser Results</button>
+                        <button id="nextpage" onclick="GetNextResultsPage()" type="button" class="btn btn-info"> >>> </button>
+                    </div>
+                    <div class="gridflexitem" id="selectionmenugrid">
+                        <button type="button" onclick="generateDocument()" class="btn btn-success">Generate Document</button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/js/notify.js"></script>
+        <script type="text/javascript" src="/js/jquery-confirm.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/collageapp.js"></script>
+
+    </body>
+
+</html>

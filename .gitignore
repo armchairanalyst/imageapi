@@ -1,0 +1,12 @@
+geckodriver.exe
+*.pdf
+/ffprofile
+/.idea
+/fenv
+/phantomjs
+/database.bak
+/database.dat
+/database.dir
+req.txt
+scratch.html
+

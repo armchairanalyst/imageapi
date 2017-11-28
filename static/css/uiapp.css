@@ -1,0 +1,184 @@
+html 
+{ 
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+
+body
+{ 
+    margin:0px;
+    padding: 0px;
+    background: url("/images/background_texture.jpg") repeat ;
+}
+
+.wrapper 
+{
+    min-width:100vw;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr repeat(5,240px) 1fr ;
+    grid-template-rows: 75px 75px repeat(3,minmax(180px,auto)) 50px;
+    color: #444;
+    margin: auto;
+    justify-content: space-between;
+    
+    grid-template-areas: 
+    ". a b b b b ."
+    ". t t t t t ."
+    ". c c c d d ."
+    ". c c c d d ."
+    ". c c c d d ."
+    ". e e e e e .";
+
+}
+
+#titles{
+    display:flex;
+    margin:auto;
+    width:100%;
+}
+
+#searchtitle{
+    float: left;
+}
+
+#resulttitle{
+    float: right;
+}
+
+#results{
+    display:grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    grid-gap: 3px;
+    grid-template-areas: 
+    "p1 p2 p3"
+    "p4 p5 p6"
+    "p7 p8 p9"
+}
+
+#p1{ grid-area: p1}
+#p2{ grid-area: p2}
+#p3{ grid-area: p3}
+#p4{ grid-area: p4}
+#p5{ grid-area: p5}
+#p6{ grid-area: p6}
+#p7{ grid-area: p7}
+#p8{ grid-area: p8}
+#p9{ grid-area: p9}
+
+.pic_container{
+    margin:auto;
+    width: 100%;
+    height: auto;;
+}
+
+
+#selection{
+    display:grid;
+
+    grid-template-columns: 300px;
+    grid-template-rows:auto;
+    grid-gap: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 840px;
+    align-content: center;
+    justify-content: center;
+}
+
+#selectioncontainer .test{
+    margin: 20px;
+    padding: 20px; 
+}
+
+
+
+
+
+.griditem
+{
+    /*
+    background-color: rgba(168, 168, 168, 0.712);
+    border-radius: 0px;
+    */
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo 
+{
+    
+    background-color: transparent !important;
+    grid-area: a;
+
+}
+
+#logo img
+{
+    /*
+    height: auto;
+    width: auto;
+
+    max-height: 100px;
+    max-width: 200px;
+    margin-left: 100px;
+    
+    */
+    margin-top: 15px;
+    max-height: 55px;
+    max-width: 184px;
+    
+}
+
+
+#search
+{
+    background-color: transparent !important;
+    grid-area: b;
+    margin: 20px;
+}
+
+#search > .searchform{
+    min-width: 100%;
+    margin-left: -70px;
+}
+
+#loadingimage{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#results 
+{
+    background-color: transparent !important;
+    grid-area: c;
+    border: 1px solid grey;
+}
+
+#titles
+{
+    background-color: transparent !important;
+    grid-area: t;
+    border: 1px solid grey;
+}
+
+#selection 
+{
+    background-color: transparent !important;
+    border: 1px solid grey;
+    grid-area: d;
+}
+
+#footer 
+{
+    grid-area: e;
+}
