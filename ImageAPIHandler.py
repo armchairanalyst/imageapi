@@ -17,6 +17,8 @@ import shelve
 
 import requests, base64
 
+
+
 ################################################################################################
 wd = os.path.dirname(os.path.realpath(__file__))
 
@@ -139,7 +141,8 @@ def InitializeBrowser():
         #browser = webdriver.PhantomJS(logpath=logpath)
         #browser.implicitly_wait(10)
     except Exception as e:
-        print("Error starting PhantomJS")
+        print("Error starting Remote Browser")
+        print(e)
         view_traceback()
 
 InitializeBrowser()

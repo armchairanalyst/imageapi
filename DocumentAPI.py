@@ -10,6 +10,10 @@ from rectpack import newPacker, PackingMode, PackingBin
 from rectpack import GuillotineBafSas,SkylineMwf, GuillotineBssfSas, MaxRectsBaf, MaxRectsBl
 
 
+
+
+
+
 from rectpack import GuillotineBssfSas, GuillotineBssfLas, \
     GuillotineBssfSlas, GuillotineBssfLlas, GuillotineBssfMaxas, \
     GuillotineBssfMinas, GuillotineBlsfSas, GuillotineBlsfLas, \
